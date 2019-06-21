@@ -471,25 +471,23 @@ div {
     }
 }
 
-blockquote,.stressed {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 2.5em 0;
-    padding: 0 0 0 50px;
-    color: #555;
-    border-left: none;
+blockquote, .stressed {
+  border-left: 5px solid #2B4DD5;
+  padding: 0 15px;
+  color: #D4D4D4;
+  margin-left: 5px;
+  margin-right: 15px;
+  font-family: times;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 30px;
+  font-size: 16px;
 }
-blockquote::before,.stressed-quote::before {
-    content: "\201C";
-    display: block;
-    font-family: times;
-    font-style: normal;
-    font-size: 48px;
-    color: #444;
-    font-weight: bold;
-    line-height: 30px;
-    margin-left: -50px;
-    position: absolute;
+blockquote, .stressed-quote > :first-child {
+  margin-top: 0;
+}
+blockquote, .stressed-quote > :last-child {
+  margin-bottom: 0;
 }
 strong,b,em {
     font-weight: bold;
